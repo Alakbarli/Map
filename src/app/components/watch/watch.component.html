@@ -1,0 +1,16 @@
+Center my location: <input style="width: 30px;height: 30px;" type="checkbox" [(ngModel)]="center">
+<div class="map-container">
+    <div class="map-frame">
+      <div id="map"></div>
+    </div>
+</div>
+
+<div>
+  <ul>
+    @for(loc of locations;track loc){
+      <li>
+        {{loc | json}}
+      </li>
+    }
+  </ul>
+</div>
